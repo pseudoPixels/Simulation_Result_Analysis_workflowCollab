@@ -8,10 +8,9 @@ class AnalysisTypes:
     def getTotalWaitingTimeOfThisUser(self, userIndex):
         total_waiting_time = 0
         myLogParser = ParsingUtility()
-        for i in range(0, len(self.log) - 1):
+        for i in range(0, len(self.log)):
 
             userActivity, collabID = myLogParser.getUserActivityTypeAndCollabID(self.log[i])
-
 
             if int(collabID) == int(userIndex) and userActivity == 'WAITING':
                 prevLog = myLogParser.getPreviousLogOfThisUser(self.log, i, userIndex)
@@ -21,7 +20,7 @@ class AnalysisTypes:
             if int(collabID) == int(userIndex) and userActivity == 'END':
                 return total_waiting_time
 
-        return 5
+        return -1
 
     def getAverageWaitTime(self, num_of_collabs):
         totalWaitTime = 0

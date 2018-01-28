@@ -4,10 +4,16 @@ from analysisScripts.analysisTypes import *
 
 
 fileUtility = FileUtility()
-simLog = fileUtility.loadSimulationLog('../simulation_datasets/1_collab_25_tasks.log')
+#fileUtility.splitAndSaveByCollabNum('../simulation_datasets/TurnBased/turnBased30.log', '../simulation_datasets/TurnBased/', 1)
 
 
 
-analysisTypes = AnalysisTypes(simLog)
-print('Average Wait Time', analysisTypes.getAverageWaitTime(4))
+
+for numOfCollab in range(16, 17):
+    simLog = fileUtility.loadSimulationLog('../simulation_datasets/TurnBased/collab_'+ str(numOfCollab) +'.log')
+    analysisTypes = AnalysisTypes(simLog[1:len(simLog):])
+    print(analysisTypes.getAverageWaitTime(numOfCollab))
+
+
+
 

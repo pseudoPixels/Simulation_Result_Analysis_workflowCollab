@@ -25,6 +25,11 @@ class ParsingUtility:
 
 
 
+
+
+
+
+
 class FileUtility:
     def __init__(self):
         pass
@@ -34,8 +39,34 @@ class FileUtility:
         with open(filePath, "r") as f:
             simLog = f.readlines()
 
+
         # remove the meta log info line (first line)
-        return simLog[1:len(simLog):]
+        return simLog#[1:len(simLog):]
+
+
+
+    def splitAndSaveByCollabNum(self, inputFilePath,  outDir, nextFileIndex=1):
+        nextFileIndex = nextFileIndex-1
+        inputFile = self.loadSimulationLog(inputFilePath)
+
+        for i in range(0, len(inputFile)):
+            splitLen = len(inputFile[i].split())
+            if(inputFile[i].split()[splitLen-1] == '=========================>'):
+                nextFileIndex = nextFileIndex + 1
+
+            with open(outDir + 'collab_' + str(nextFileIndex)+'.log', 'a') as the_file:
+                the_file.write(inputFile[i])
+
+        #print(len(inputFile[0].split()))
+
+        # for i in range(0, len(inputFile)):
+        #     with
+
+
+
+
+
+
 
 
 

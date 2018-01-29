@@ -397,6 +397,237 @@ workflow.add('n25', 'n13', workflow.traverseDF);
 
 
 
+//*****************************************************************
+//4 Regular ALL CONNECTED
+//================================================================
+var workflow = new Tree('n1');
+
+//level 1
+workflow.add('n2', 'n1', workflow.traverseDF);
+workflow.add('n3', 'n1', workflow.traverseDF);
+workflow.add('n4', 'n1', workflow.traverseDF);
+workflow.add('n5', 'n1', workflow.traverseDF);
+
+
+
+//level 2
+workflow.add('n6', 'n2', workflow.traverseDF);
+workflow.add('n6', 'n3', workflow.traverseDF);
+workflow.add('n6', 'n4', workflow.traverseDF);
+workflow.add('n6', 'n5', workflow.traverseDF);
+ 
+workflow.add('n7', 'n2', workflow.traverseDF);
+workflow.add('n7', 'n3', workflow.traverseDF);
+workflow.add('n7', 'n4', workflow.traverseDF);
+workflow.add('n7', 'n5', workflow.traverseDF);
+ 
+workflow.add('n8', 'n2', workflow.traverseDF);
+workflow.add('n8', 'n3', workflow.traverseDF);
+workflow.add('n8', 'n4', workflow.traverseDF);
+workflow.add('n8', 'n5', workflow.traverseDF);
+ 
+workflow.add('n9', 'n2', workflow.traverseDF);
+workflow.add('n9', 'n3', workflow.traverseDF);
+workflow.add('n9', 'n4', workflow.traverseDF);
+workflow.add('n9', 'n5', workflow.traverseDF);
+ 
+workflow.add('n10', 'n2', workflow.traverseDF);
+workflow.add('n10', 'n3', workflow.traverseDF);
+workflow.add('n10', 'n4', workflow.traverseDF);
+workflow.add('n10', 'n5', workflow.traverseDF);
+ 
+workflow.add('n11', 'n2', workflow.traverseDF);
+workflow.add('n11', 'n3', workflow.traverseDF);
+workflow.add('n11', 'n4', workflow.traverseDF);
+workflow.add('n11', 'n5', workflow.traverseDF);
+ 
+workflow.add('n12', 'n2', workflow.traverseDF);
+workflow.add('n12', 'n3', workflow.traverseDF);
+workflow.add('n12', 'n4', workflow.traverseDF);
+workflow.add('n12', 'n5', workflow.traverseDF);
+ 
+workflow.add('n13', 'n2', workflow.traverseDF);
+workflow.add('n13', 'n3', workflow.traverseDF);
+workflow.add('n13', 'n4', workflow.traverseDF);
+workflow.add('n13', 'n5', workflow.traverseDF);
+ 
+workflow.add('n14', 'n2', workflow.traverseDF);
+workflow.add('n14', 'n3', workflow.traverseDF);
+workflow.add('n14', 'n4', workflow.traverseDF);
+workflow.add('n14', 'n5', workflow.traverseDF);
+ 
+workflow.add('n15', 'n2', workflow.traverseDF);
+workflow.add('n15', 'n3', workflow.traverseDF);
+workflow.add('n15', 'n4', workflow.traverseDF);
+workflow.add('n15', 'n5', workflow.traverseDF);
+ 
+workflow.add('n16', 'n2', workflow.traverseDF);
+workflow.add('n16', 'n3', workflow.traverseDF);
+workflow.add('n16', 'n4', workflow.traverseDF);
+workflow.add('n16', 'n5', workflow.traverseDF);
+ 
+workflow.add('n17', 'n2', workflow.traverseDF);
+workflow.add('n17', 'n3', workflow.traverseDF);
+workflow.add('n17', 'n4', workflow.traverseDF);
+workflow.add('n17', 'n5', workflow.traverseDF);
+ 
+workflow.add('n18', 'n2', workflow.traverseDF);
+workflow.add('n18', 'n3', workflow.traverseDF);
+workflow.add('n18', 'n4', workflow.traverseDF);
+workflow.add('n18', 'n5', workflow.traverseDF);
+ 
+workflow.add('n19', 'n2', workflow.traverseDF);
+workflow.add('n19', 'n3', workflow.traverseDF);
+workflow.add('n19', 'n4', workflow.traverseDF);
+workflow.add('n19', 'n5', workflow.traverseDF);
+ 
+workflow.add('n20', 'n2', workflow.traverseDF);
+workflow.add('n20', 'n3', workflow.traverseDF);
+workflow.add('n20', 'n4', workflow.traverseDF);
+workflow.add('n20', 'n5', workflow.traverseDF);
+ 
+workflow.add('n21', 'n2', workflow.traverseDF);
+workflow.add('n21', 'n3', workflow.traverseDF);
+workflow.add('n21', 'n4', workflow.traverseDF);
+workflow.add('n21', 'n5', workflow.traverseDF);
+
+
+
+
+//level 3
+workflow.add('n22', 'n6', workflow.traverseDF);
+workflow.add('n22', 'n7', workflow.traverseDF);
+workflow.add('n22', 'n8', workflow.traverseDF);
+workflow.add('n22', 'n9', workflow.traverseDF);
+workflow.add('n22', 'n10', workflow.traverseDF);
+workflow.add('n22', 'n11', workflow.traverseDF);
+workflow.add('n22', 'n12', workflow.traverseDF);
+workflow.add('n22', 'n13', workflow.traverseDF);
+workflow.add('n22', 'n14', workflow.traverseDF);
+workflow.add('n22', 'n15', workflow.traverseDF);
+workflow.add('n22', 'n16', workflow.traverseDF);
+workflow.add('n22', 'n17', workflow.traverseDF);
+workflow.add('n22', 'n18', workflow.traverseDF);
+workflow.add('n22', 'n19', workflow.traverseDF);
+workflow.add('n22', 'n20', workflow.traverseDF);
+workflow.add('n22', 'n21', workflow.traverseDF);
+ 
+workflow.add('n23', 'n6', workflow.traverseDF);
+workflow.add('n23', 'n7', workflow.traverseDF);
+workflow.add('n23', 'n8', workflow.traverseDF);
+workflow.add('n23', 'n9', workflow.traverseDF);
+workflow.add('n23', 'n10', workflow.traverseDF);
+workflow.add('n23', 'n11', workflow.traverseDF);
+workflow.add('n23', 'n12', workflow.traverseDF);
+workflow.add('n23', 'n13', workflow.traverseDF);
+workflow.add('n23', 'n14', workflow.traverseDF);
+workflow.add('n23', 'n15', workflow.traverseDF);
+workflow.add('n23', 'n16', workflow.traverseDF);
+workflow.add('n23', 'n17', workflow.traverseDF);
+workflow.add('n23', 'n18', workflow.traverseDF);
+workflow.add('n23', 'n19', workflow.traverseDF);
+workflow.add('n23', 'n20', workflow.traverseDF);
+workflow.add('n23', 'n21', workflow.traverseDF);
+ 
+workflow.add('n24', 'n6', workflow.traverseDF);
+workflow.add('n24', 'n7', workflow.traverseDF);
+workflow.add('n24', 'n8', workflow.traverseDF);
+workflow.add('n24', 'n9', workflow.traverseDF);
+workflow.add('n24', 'n10', workflow.traverseDF);
+workflow.add('n24', 'n11', workflow.traverseDF);
+workflow.add('n24', 'n12', workflow.traverseDF);
+workflow.add('n24', 'n13', workflow.traverseDF);
+workflow.add('n24', 'n14', workflow.traverseDF);
+workflow.add('n24', 'n15', workflow.traverseDF);
+workflow.add('n24', 'n16', workflow.traverseDF);
+workflow.add('n24', 'n17', workflow.traverseDF);
+workflow.add('n24', 'n18', workflow.traverseDF);
+workflow.add('n24', 'n19', workflow.traverseDF);
+workflow.add('n24', 'n20', workflow.traverseDF);
+workflow.add('n24', 'n21', workflow.traverseDF);
+ 
+workflow.add('n25', 'n6', workflow.traverseDF);
+workflow.add('n25', 'n7', workflow.traverseDF);
+workflow.add('n25', 'n8', workflow.traverseDF);
+workflow.add('n25', 'n9', workflow.traverseDF);
+workflow.add('n25', 'n10', workflow.traverseDF);
+workflow.add('n25', 'n11', workflow.traverseDF);
+workflow.add('n25', 'n12', workflow.traverseDF);
+workflow.add('n25', 'n13', workflow.traverseDF);
+workflow.add('n25', 'n14', workflow.traverseDF);
+workflow.add('n25', 'n15', workflow.traverseDF);
+workflow.add('n25', 'n16', workflow.traverseDF);
+workflow.add('n25', 'n17', workflow.traverseDF);
+workflow.add('n25', 'n18', workflow.traverseDF);
+workflow.add('n25', 'n19', workflow.traverseDF);
+workflow.add('n25', 'n20', workflow.traverseDF);
+workflow.add('n25', 'n21', workflow.traverseDF);
+
+
+
+
+
+
+
+
+==================================================================================
+================= REGULAR TREE ===================================================
+==================================================================================
+//1 Regular Tree
+
+//Workflow Construction
+var workflow = new Tree('n1');
+workflow.add('n2', 'n1', workflow.traverseDF);
+workflow.add('n3', 'n2', workflow.traverseDF);
+workflow.add('n4', 'n3', workflow.traverseDF);
+workflow.add('n5', 'n4', workflow.traverseDF);
+workflow.add('n6', 'n5', workflow.traverseDF);
+workflow.add('n7', 'n6', workflow.traverseDF);
+workflow.add('n8', 'n7', workflow.traverseDF);
+workflow.add('n9', 'n8', workflow.traverseDF);
+workflow.add('n10', 'n9', workflow.traverseDF);
+workflow.add('n11', 'n10', workflow.traverseDF);
+workflow.add('n12', 'n11', workflow.traverseDF);
+workflow.add('n13', 'n12', workflow.traverseDF);
+workflow.add('n14', 'n13', workflow.traverseDF);
+workflow.add('n15', 'n14', workflow.traverseDF);
+workflow.add('n16', 'n15', workflow.traverseDF);
+workflow.add('n17', 'n16', workflow.traverseDF);
+workflow.add('n18', 'n17', workflow.traverseDF);
+workflow.add('n19', 'n18', workflow.traverseDF);
+workflow.add('n20', 'n19', workflow.traverseDF);
+workflow.add('n21', 'n20', workflow.traverseDF);
+workflow.add('n22', 'n21', workflow.traverseDF);
+workflow.add('n23', 'n22', workflow.traverseDF);
+workflow.add('n24', 'n23', workflow.traverseDF);
+workflow.add('n25', 'n24', workflow.traverseDF);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -439,3 +670,15 @@ workflow.add('n22', 'n6', workflow.traverseDF);
 workflow.add('n23', 'n6', workflow.traverseDF);
 workflow.add('n24', 'n6', workflow.traverseDF);
 workflow.add('n25', 'n6', workflow.traverseDF);
+
+
+
+
+
+
+
+
+
+
+
+

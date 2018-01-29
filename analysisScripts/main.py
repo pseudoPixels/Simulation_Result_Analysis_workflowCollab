@@ -12,7 +12,7 @@ fileUtility = FileUtility()
 for numOfCollab in range(1, 20):
     simLog = fileUtility.loadSimulationLog('../simulation_datasets/TurnBased/collab_'+ str(numOfCollab) +'.log')
     analysisTypes = AnalysisTypes(simLog[1:len(simLog):])
-    print(numOfCollab, analysisTypes.getAverageWaitTime(numOfCollab))
+    print(analysisTypes.getAverageWaitTime(numOfCollab))
 
 
 

@@ -9,14 +9,14 @@ datasetFile = newSplittedDatasetDir + '.log'
 fileUtility = FileUtility()
 #fileUtility.splitAndSaveByCollabNum(parentDir+datasetFile, parentDir + 'SplittedDataset/' + newSplittedDatasetDir+'/', 1)
 
-#fileUtility.splitAndSaveByCollabNum('../simulation_datasets/StrictModuleLocking/new/st19n.log', '../simulation_datasets/StrictModuleLocking/new/' , 1)
+#fileUtility.splitAndSaveByCollabNum('../simulation_datasets/AttributeLevelLocking/new/a19n.log', '../simulation_datasets/AttributeLevelLocking/new/' , 1)
 
 
 
 
 
 #DATASET_FILE_PATH = parentDir + 'SplittedDataset/' + newSplittedDatasetDir+'/collab_'
-DATASET_FILE_PATH = '../simulation_datasets/StrictModuleLocking/new/collab_'
+DATASET_FILE_PATH = '../simulation_datasets/AttributeLevelLocking/new/collab_'
 print("\n\n")
 print("===============================================")
 print("AVG. WAITING TIME PER COLLAB")

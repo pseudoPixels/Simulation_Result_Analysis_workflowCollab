@@ -33,8 +33,18 @@
       <file leaf-file-name="analysisTypes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analysisScripts/analysisTypes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+            <state relative-caret-position="301">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a19n.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simulation_datasets/AttributeLevelLocking/new/a19n.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="11268" column="30" selection-start-line="11268" selection-start-column="30" selection-end-line="11268" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -43,8 +53,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/analysisScripts/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -89,6 +99,7 @@
         <option value="$PROJECT_DIR$/simulation_datasets/TurnBased2/fastTurn20.log" />
         <option value="$PROJECT_DIR$/analysisScripts/goodTurnBased.py" />
         <option value="$PROJECT_DIR$/DifferentWorkflowTrees/goodTurnBased.js" />
+        <option value="$PROJECT_DIR$/simulation_datasets/AttributeLevelLocking/new/a19n.log" />
         <option value="$PROJECT_DIR$/analysisScripts/main.py" />
       </list>
     </option>
@@ -162,7 +173,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="StrictModuleLocking" />
+              <option name="myItemId" value="AttributeLevelLocking" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -180,7 +191,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="StrictModuleLocking" />
+              <option name="myItemId" value="AttributeLevelLocking" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -218,11 +229,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/simulation_datasets/AttributeLevelLocking/new" />
       <recent name="$PROJECT_DIR$/simulation_datasets/StrictModuleLocking/new" />
       <recent name="$PROJECT_DIR$/simulation_datasets/TurnBased2" />
       <recent name="$PROJECT_DIR$/simulation_datasets/TurnBased" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/simulation_datasets/AttributeLevelLocking/old" />
       <recent name="$PROJECT_DIR$/simulation_datasets/StrictModuleLocking/old" />
       <recent name="$PROJECT_DIR$/simulation_datasets/TurnBased" />
     </key>
@@ -665,7 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simulation_datasets/AttributeLevelLocking/RegularWorkflowTrees/attributeLevelLocking_25tasks_1RegularTree_19Collabs_Node:getNodeWithLowerDependencyDegree_exceptUserLockedNode_Attr:getNodeWithHigherDependencyDegree_exceptUserLockedAndWaitingNodes().log">
+    <entry file="file://$PROJECT_DIR$/simulation_datasets/AttributeLevelLocking/old/RegularWorkflowTrees/attributeLevelLocking_25tasks_1RegularTree_19Collabs_Node:getNodeWithLowerDependencyDegree_exceptUserLockedNode_Attr:getNodeWithHigherDependencyDegree_exceptUserLockedAndWaitingNodes().log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-262506">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -673,7 +686,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simulation_datasets/AttributeLevelLocking/RegularWorkflowTrees/attributeLevelLocking_25tasks_2RegularTree_19Collabs_Node:getNodeWithLowerDependencyDegree_exceptUserLockedNode_Attr:getNodeWithHigherDependencyDegree_exceptUserLockedAndWaitingNodes().log">
+    <entry file="file://$PROJECT_DIR$/simulation_datasets/AttributeLevelLocking/old/RegularWorkflowTrees/attributeLevelLocking_25tasks_2RegularTree_19Collabs_Node:getNodeWithLowerDependencyDegree_exceptUserLockedNode_Attr:getNodeWithHigherDependencyDegree_exceptUserLockedAndWaitingNodes().log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-105940">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -717,14 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analysisScripts/analysisTypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -825,10 +830,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/analysisScripts/analysisTypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simulation_datasets/AttributeLevelLocking/new/a19n.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="11268" column="30" selection-start-line="11268" selection-start-column="30" selection-end-line="11268" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/analysisScripts/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
           <folding />
         </state>
       </provider>

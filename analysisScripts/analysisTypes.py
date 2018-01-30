@@ -76,6 +76,18 @@ class AnalysisTypes:
         return updatePerMilliSec*perUnitTime
 
 
+    def getUpdateCountPerCollab(self, numOfCollab):
+        updateCount = [0 for x in range(numOfCollab)]
+        myLogParser = ParsingUtility()
+        for i in range(0, len(self.log)):
+
+            userActivity, collabID = myLogParser.getUserActivityTypeAndCollabID(self.log[i])
+
+            if userActivity == 'WAITING':
+                updateCount[int(collabID)] += 1
+
+        return  updateCount
+
 
     #TODO: fix the calculation from Confucius paper
     def getWorkflowCompositionEfficiency(self, numOfCollabs, numOfTasks):

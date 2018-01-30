@@ -73,16 +73,31 @@ class FileUtility:
 
 
 
+from datetime import datetime
 
 class TimeUtility:
     def __init__(self):
         pass
 
     # return time difference in miliseconds for two given times
-    def getTimeDifference(self,startTime, endTime):
+    def getTimeDifference2(self,startTime, endTime):
         hourDiff = abs(int(endTime.split(':')[0]) - int(startTime.split(':')[0]))
         minDiff = abs(int(endTime.split(':')[1]) - int(startTime.split(':')[1]))
         secDiff = abs(int(endTime.split(':')[2].split('.')[0]) - int(startTime.split(':')[2].split('.')[0]))
         millDiff = abs(int(endTime.split(':')[2].split('.')[1]) - int(startTime.split(':')[2].split('.')[1]))
 
         return hourDiff * 3600000 + minDiff * 60000 + secDiff * 1000 + millDiff
+
+
+
+
+    def getTimeDifference(self, startTime, endTime):
+        a = datetime.strptime(startTime, '%H:%M:%S.%f')
+        b = datetime.strptime(endTime, '%H:%M:%S.%f')
+
+        return  abs((a-b).total_seconds()*1000)
+        #print((b-a).total_seconds()*1000)
+
+
+
+#TimeUtility().getNewTimeDiff('16:47:05.770', '16:47:06.772')

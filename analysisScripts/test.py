@@ -9,7 +9,7 @@ datasetFile = newSplittedDatasetDir + '.log'
 fileUtility = FileUtility()
 #fileUtility.splitAndSaveByCollabNum(parentDir+datasetFile, parentDir + 'SplittedDataset/' + newSplittedDatasetDir+'/', 1)
 
-#fileUtility.splitAndSaveByCollabNum('../simulation_datasets/Different_Dimensions/Variants_of_workflow_trees/AttributeLevelLocking/2AllConnected/collabs19Tasks25.log', '../simulation_datasets/Different_Dimensions/Variants_of_workflow_trees/AttributeLevelLocking/2AllConnected/' , 1)
+#fileUtility.splitAndSaveByCollabNum('../simulation_datasets/Different_Dimensions/Variants_of_workflow_trees/AttributeLevelLocking/2AllConnected/collabs30Tasks25.log', '../simulation_datasets/Different_Dimensions/Variants_of_workflow_trees/AttributeLevelLocking/2AllConnected/' , 1)
 
 
 
@@ -20,7 +20,7 @@ DATASET_FILE_PATH = '../simulation_datasets/Different_Dimensions/Variants_of_wor
 print("\n\n")
 print("===============================================")
 print("AVG. WAITING TIME PER COLLAB")
-for numOfCollab in range(1, 19):
+for numOfCollab in range(1, 30):
     simLog = fileUtility.loadSimulationLog(DATASET_FILE_PATH + str(numOfCollab) +'.log')
     analysisTypes = AnalysisTypes(simLog[1:len(simLog):])
     print(analysisTypes.getAverageWaitTime(numOfCollab))
@@ -31,7 +31,7 @@ for numOfCollab in range(1, 19):
 print("\n\n")
 #print("===============================================")
 print("TOTAL WORKFLOW DESIGN TIME")
-for numOfCollab in range(1, 19):
+for numOfCollab in range(1, 30):
     simLog = fileUtility.loadSimulationLog(DATASET_FILE_PATH + str(numOfCollab) +'.log')
     analysisTypes = AnalysisTypes(simLog[1:len(simLog):])
     print(analysisTypes.getCollaborativeWorkflowDesignTime())
@@ -44,7 +44,7 @@ for numOfCollab in range(1, 19):
 print("\n\n")
 #print("===============================================")
 print("AVG. UPDATES PER MIN")
-for numOfCollab in range(1, 19):
+for numOfCollab in range(1, 30):
     simLog = fileUtility.loadSimulationLog(DATASET_FILE_PATH + str(numOfCollab) +'.log')
     analysisTypes = AnalysisTypes(simLog[1:len(simLog):])
     print(analysisTypes.getTotalUpdatesPerUnitTime(60000))
@@ -54,7 +54,7 @@ for numOfCollab in range(1, 19):
 print("\n\n")
 #print("===============================================")
 print("EFFICEINCY")
-for numOfCollab in range(1, 19):
+for numOfCollab in range(1, 30):
     simLog = fileUtility.loadSimulationLog(DATASET_FILE_PATH + str(numOfCollab) +'.log')
     analysisTypes = AnalysisTypes(simLog[1:len(simLog):])
     print(analysisTypes.getWorkflowCompositionEfficiency(numOfCollab, 25))

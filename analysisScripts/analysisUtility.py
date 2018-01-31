@@ -57,11 +57,6 @@ class FileUtility:
             with open(outDir + 'collab_' + str(nextFileIndex)+'.log', 'a') as the_file:
                 the_file.write(inputFile[i])
 
-        #print(len(inputFile[0].split()))
-
-        # for i in range(0, len(inputFile)):
-        #     with
-
 
 
 
@@ -96,8 +91,26 @@ class TimeUtility:
         b = datetime.strptime(endTime, '%H:%M:%S.%f')
 
         return  abs((a-b).total_seconds()*1000)
-        #print((b-a).total_seconds()*1000)
 
 
 
-#TimeUtility().getNewTimeDiff('16:47:05.770', '16:47:06.772')
+
+
+class WorkflowCompositionUtility:
+    def __init__(self):
+        pass
+
+
+    def getSimulationConditional(self, numberOfCollabs, numberOfTasks=25):
+        for aCollab in range(1, numberOfCollabs+1):
+            print('if(nCollabs=='+str(aCollab) +'){')
+            print('     console.log("Tasks: ' + str(numberOfTasks) + '; Collaborators: '+ str(aCollab) + '    =========================>");')
+            print(' ')
+            for aSimObject in range(0, aCollab):
+                print('     var c' + str(aSimObject) + '= new WorkflowCollaborator('+ str(aSimObject) +', 0);')
+                print('     c'+str(aSimObject)+ '.simulate();')
+            print('}')
+
+
+
+WorkflowCompositionUtility().getSimulationConditional(10)

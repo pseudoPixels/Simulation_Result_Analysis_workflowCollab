@@ -9,14 +9,14 @@ datasetFile = newSplittedDatasetDir + '.log'
 fileUtility = FileUtility()
 #fileUtility.splitAndSaveByCollabNum(parentDir+datasetFile, parentDir + 'SplittedDataset/' + newSplittedDatasetDir+'/', 1)
 
-#fileUtility.splitAndSaveByCollabNum('../simulation_datasets/Different_Dimensions/Variants_of_workflow_trees/StrictModuleLocking/4Regular/collabs30tasks25.log', '../simulation_datasets/Different_Dimensions/Variants_of_workflow_trees/StrictModuleLocking/4Regular/' , 1)
+#fileUtility.splitAndSaveByCollabNum('../simulation_datasets/Different_Dimensions/Variants_of_node_requests/AttributeLevelLocking/LowerDependencyDegree_exceptUserLockedAndWaitingNodes2/collabs30tasks25.log', '../simulation_datasets/Different_Dimensions/Variants_of_node_requests/AttributeLevelLocking/LowerDependencyDegree_exceptUserLockedAndWaitingNodes2/' , 1)
 
 
 
 
 
 #DATASET_FILE_PATH = parentDir + 'SplittedDataset/' + newSplittedDatasetDir+'/collab_'
-DATASET_FILE_PATH = '../simulation_datasets/Different_Dimensions/Variants_of_workflow_trees/StrictModuleLocking/4Regular/collab_'
+DATASET_FILE_PATH = '../simulation_datasets/Different_Dimensions/Variants_of_node_requests/AttributeLevelLocking/LowerDependencyDegree_exceptUserLockedAndWaitingNodes2/collab_'
 print("\n\n")
 print("===============================================")
 print("AVG. WAITING TIME PER COLLAB")

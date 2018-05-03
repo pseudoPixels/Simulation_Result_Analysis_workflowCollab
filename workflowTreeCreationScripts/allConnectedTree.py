@@ -21,6 +21,7 @@ def getNumOfNodesInLevel(nodeLevel):
 
 
 
+
 def getNodeLimitsForLevel(nodeLevel):
     start_index  = 1
     for aLevel in range(0, nodeLevel):
@@ -32,12 +33,48 @@ def getNodeLimitsForLevel(nodeLevel):
 
 
 
-NUM_OF_NODES = 20
 
-for aNode in range(2, NUM_OF_NODES):
-    nodeLevel = getLevelOfNodeIndex(aNode)
-    start_index, end_index = getNodeLimitsForLevel(nodeLevel-1)
-    for aParentNode in range(start_index,end_index):
-        print(aNode, "->", aParentNode)
 
-    print("==============")
+def constructTree(num_of_nodes):
+    print("var workflow = new Tree('n1');")
+    for aNode in range(2, num_of_nodes+1):
+        nodeLevel = getLevelOfNodeIndex(aNode)
+        start_index, end_index = getNodeLimitsForLevel(nodeLevel-1)
+        for aParentNode in range(start_index,end_index):
+            print("workflow.add('n" + str(aNode) + "', 'n" + str(aParentNode) + "', workflow.traverseDF);")
+        print(" ")
+
+
+
+
+def constructTreeWithLimit(fromNodes, toNodes):
+    if fromNodes == 1:
+        constructTree(toNodes)
+        return
+    for aNode in range(fromNodes, toNodes+1):
+        nodeLevel = getLevelOfNodeIndex(aNode)
+        start_index, end_index = getNodeLimitsForLevel(nodeLevel-1)
+        for aParentNode in range(start_index,   end_index):
+            print("     workflow.add('n" + str(aNode) + "', 'n" + str(aParentNode) + "', workflow.traverseDF);")
+        print(" ")
+
+
+
+
+
+#==================================================
+#==================================================
+
+
+numOfNodes = 500
+
+for aNode in range(1, numOfNodes+1):
+    print("if(numOfNodes == " + str(aNode) +"){")
+    constructTreeWithLimit(aNode, aNode)
+    print("}")
+    print(" ")
+
+
+
+
+#constructTreeWithLimit(5,5)

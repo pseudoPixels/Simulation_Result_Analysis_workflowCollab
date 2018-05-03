@@ -54,7 +54,7 @@ class FileUtility:
             if(inputFile[i].split()[splitLen-1] == '=========================>'):
                 nextFileIndex = nextFileIndex + 1
 
-            with open(outDir + 'collab_' + str(nextFileIndex)+'.log', 'a') as the_file:
+            with open(outDir + 'tasks_' + str(nextFileIndex)+'.log', 'a') as the_file:
                 the_file.write(inputFile[i])
 
 
